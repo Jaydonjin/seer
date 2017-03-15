@@ -1,0 +1,9 @@
+{
+  "name": "seer2",
+  "image": "docker.neg/python:neg-biz",
+  "tag": "0.0.1",
+  "port": [8080],
+  "env": {"ENV":"development"},
+  "volume": [],
+  "cmd": [ "python", "run.py"]
+}

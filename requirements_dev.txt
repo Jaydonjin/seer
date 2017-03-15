@@ -1,0 +1,6 @@
+Flask
+Flask-CORS
+Flask-NegLog
+Flask-RESTful
+Gevent
+Mock
