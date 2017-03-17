@@ -10,9 +10,9 @@ class HelloWorldTestCase(unittest.TestCase):
         self.client = create_app('test').test_client()
 
     def test_version(self):
-        response = self.client.get('/seer2/api/v1/version', follow_redirects=True)
+        response = self.client.get('/seer/api/v1/version', follow_redirects=True)
         self.assertDictEqual(dict(version=app.__version__), json.loads(response.data))
 
     def test_faq(self):
-        response = self.client.get('/seer2/faq.htm')
+        response = self.client.get('/seer/faq.htm')
         self.assertEqual('<!--Newegg-->', response.data)

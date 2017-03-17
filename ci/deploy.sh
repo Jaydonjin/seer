@@ -6,7 +6,7 @@ IMAGE=$(sirius docker_image_name | head -n 1)
 # deploy app manually
 # replace DEPLOY_SERVER with the release server
 #
-# sirius docker_deploy:seer2,${IMAGE},server=DEPLOY_SERVER,ports="9200;8080",env="ENV\=gqc"
+# sirius docker_deploy:seer,${IMAGE},server=DEPLOY_SERVER,ports="9200;8080",env="ENV\=gqc"
 # ----------------------------------------------------------------------------
 
 # ----------------------------------------
@@ -14,7 +14,7 @@ IMAGE=$(sirius docker_image_name | head -n 1)
 # you should not care about the app's tcp port
 # ---------------------------------------
 
-sirius docker_dev_deploy:seer2,${IMAGE},env="ENV\=gqc"
+sirius docker_dev_deploy:seer,${IMAGE},env="ENV\=gqc"
 
 [ $? -gt 0 ] && exit 1
 

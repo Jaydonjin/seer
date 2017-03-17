@@ -1,5 +1,5 @@
 {
-  "name": "seer2",
+  "name": "seer",
   "image": "docker.neg/python:neg-biz",
   "tag": "0.0.1",
   "port": [8080],

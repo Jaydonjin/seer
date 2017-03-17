@@ -53,7 +53,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'seer2'
+project = u'seer'
 copyright = u'2016, Newegg.inc'
 author = u'Newegg.inc'
 

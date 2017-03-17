@@ -14,7 +14,7 @@ cors = CORS()
 
 
 def create_app(config_name):
-    app = Flask(__name__, static_url_path='/seer2/static')
+    app = Flask(__name__, static_url_path='/seer/static')
     app.config.from_object('config.default')
     app.config.from_object('config.{0}'.format(config_name.lower()))
     app.config['VERSION'] = __version__
