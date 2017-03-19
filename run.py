@@ -1,14 +1,10 @@
 """deimos entry point
 
 """
-import gevent.monkey
-
-gevent.monkey.patch_all()
 
 if __name__ == '__main__':
     import os
 
-    from gevent.wsgi import WSGIServer
     from app import create_app
 
     ENV_NAME = 'ENV'
@@ -19,6 +15,4 @@ if __name__ == '__main__':
 
     if app.config.get('DEBUG', False):
         app.run(app.config['HTTP_HOST'], app.config['HTTP_PORT'], debug=False)
-    else:
-        WSGIServer((app.config['HTTP_HOST'], app.config['HTTP_PORT']), application=app,
-                   log=None).serve_forever()
+
