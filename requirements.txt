@@ -1,5 +1,2 @@
 Flask
-Flask-CORS
-Flask-NegLog==0.0.2
 Flask-RESTful
-Gevent
