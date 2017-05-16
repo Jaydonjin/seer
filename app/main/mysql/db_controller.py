@@ -9,7 +9,7 @@ def create_article(title, author, body, like_time, pushdate):
     articles = make_create_article(article_id, title, author, body, like_time, pushdate)
     db.session.add(articles)
     db.session.commit()
-    return 'success'
+    return 'success', article_id
 
 
 def get_article_by_id(id):
